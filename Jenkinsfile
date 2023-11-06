@@ -21,7 +21,7 @@ stages {
                 steps {
                     script {
                     sh '''
-                    docker run -d -p 80:80 --name dev-cast $DOCKER_ID/$DOCKER_IMAGE-cast:$DOCKER_TAG
+                    docker run -d -p 70:80 --name dev-cast $DOCKER_ID/$DOCKER_IMAGE-cast:$DOCKER_TAG
                     sleep 10
                     '''
                     }
